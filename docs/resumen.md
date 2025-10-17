@@ -2,11 +2,12 @@
 
 ## 📊 Estadísticas del Proyecto
 
-- **Líneas de código Python**: 1,469
+- **Líneas de código Python**: 1,469 (código fuente) + 320 (generadores de diagramas) = 1,789 total
 - **Líneas de SQL**: 222
-- **Líneas de documentación**: 1,223
+- **Líneas de documentación**: 1,452 (README + docs/)
 - **Diagramas generados**: 7
 - **Módulos implementados**: 3 (Usuarios, Productos, Pagos)
+- **Total de archivos**: 30
 
 ## ✅ Cumplimiento de Requerimientos
 
@@ -106,20 +107,21 @@
 
 ## 📚 Documentación Creada
 
-1. **README.md** (≈900 líneas)
+1. **README.md** (474 líneas)
    - Documentación completa del proyecto
    - Guías de instalación y uso
    - Ejemplos de código
    - Estructura del proyecto
+   - Roadmap futuro
 
-2. **arquitectura.md** (≈330 líneas)
+2. **arquitectura.md** (247 líneas)
    - Visión general de la arquitectura
    - Descripción de capas y componentes
    - Patrones de diseño utilizados
    - Diagramas arquitectónicos ASCII
    - Consideraciones de escalabilidad y seguridad
 
-3. **interfaces.md** (≈415 líneas)
+3. **interfaces.md** (505 líneas)
    - Contratos entre componentes
    - Definición detallada de interfaces
    - Tipos de datos y formatos
@@ -127,13 +129,20 @@
    - Códigos de error
    - Versionamiento
 
+4. **resumen.md** (230 líneas)
+   - Resumen ejecutivo del proyecto
+   - Estadísticas y métricas
+   - Cumplimiento de requerimientos
+
 ## 🛠️ Tecnologías Implementadas
 
 - **Python 3.11+**: Lenguaje principal
 - **Graphviz 0.20.1+**: Generación automática de diagramas UML
-- **SQLite**: Base de datos (desarrollo)
-- **MySQL/PostgreSQL**: Soportado (producción)
+- **SQLite**: Base de datos (esquema SQL incluido, implementación en memoria para desarrollo)
+- **MySQL/PostgreSQL**: Soportado mediante esquema SQL compatible
 - **Git**: Control de versiones
+
+**Nota sobre la base de datos**: El sistema actualmente utiliza almacenamiento en memoria mediante diccionarios en los repositorios. El esquema SQL completo está incluido para despliegue en producción con SQLite, MySQL o PostgreSQL.
 
 ## 🎯 Características Principales
 
@@ -225,5 +234,9 @@ El sistema está listo para continuar con los siguientes avances del proyecto, q
 **Fecha de entrega**: Avance 1 completado
 **Tecnología principal**: Python 3.11+
 **Arquitectura**: Modelo-Vista-Controlador (MVC)
-**Total de archivos creados**: 31
-**Total de líneas de código**: 3,234+
+**Total de archivos creados**: 30 (16 Python, 7 PNG, 4 Markdown, 1 SQL, 1 requirements.txt, 1 .gitignore)
+**Total de líneas de código y documentación**: 
+- Código Python: 1,789 líneas
+- SQL: 222 líneas
+- Documentación: 1,452 líneas
+- **Total: 3,463 líneas**
